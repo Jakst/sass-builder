@@ -13,7 +13,7 @@ CMD ["/usr/local/bundle/bin/sass",\
 	"--require", "bootstrap-sass",\
 	"--update", "${SASS_PATH}:${SASS_PATH}"]
 
-RUN gem install listen compass bootstrap-sass
+RUN gem install listen:3.1.5 compass:1.0.3 bootstrap-sass:3.3.7
 
 ADD entrypoint.sh /usr/local/sbin/
 
