@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  sass:
+    build: ./
+    image: jakst/sass-builder
+    volumes:
+      - ./your_sass_project:/app
+    environment:
+      - SASS_PATH=app
+
